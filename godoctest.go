@@ -6,7 +6,8 @@ package godoctest
 
 import "fmt"
 
-// NewAPI1 is a preview function (PREVIEW)
+// NewAPI1 is a preview function
+// (PREVIEW)
 //
 // This is the
 // the longer
@@ -16,7 +17,8 @@ func NewAPI1(x string) {
 	fmt.Println(x)
 }
 
-// OldAPI1 is a deprecated function (DEPRECATED)
+// OldAPI1 is a deprecated function
+// (DEPRECATED)
 //
 // Deprecated: since v0.10.0
 //
