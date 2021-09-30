@@ -6,6 +6,26 @@ package godoctest
 
 import "fmt"
 
+// NewAPI1 is a preview function (PREVIEW)
+//
+// This is the
+// the longer
+// description
+func NewAPI1(x string) {
+	// TODO(ansiwen): this is a todo note
+	fmt.Println(x)
+}
+
+// NewAPI2 is a preview function
+//  PREVIEW
+// This is the
+// the longer
+// description
+func NewAPI2(x string) {
+	// BUG(ansiwen): this is a bug note
+	fmt.Println(x)
+}
+
 // Test is a test for godoc
 //
 // This is another span that
@@ -21,6 +41,8 @@ import "fmt"
 //
 func Test() {
 	fmt.Println("test")
+	// BUG(uid)
+	// PREVIEW(uid): this is a preview note
 }
 
 // Test2 is a test for godoc
@@ -34,6 +56,8 @@ func Test2() {
 // Test3 bla
 //
 // This is a Header
+//
+// PREVIEW(uid): this is a preview note
 //
 // This
 // is
@@ -68,5 +92,10 @@ func Test5() {
 //
 // header works only with following paragraph
 func Test6() {
+	fmt.Println("test")
+}
+
+// Test7 is a test for godoc (PREVIEW)
+func Test7() {
 	fmt.Println("test")
 }
