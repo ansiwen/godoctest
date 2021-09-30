@@ -26,6 +26,26 @@ func NewAPI2(x string) {
 	fmt.Println(x)
 }
 
+// OldAPI1 is a deprecated function (DEPRECATED)
+//
+// This is the
+// the longer
+// description
+func OldAPI1(x string) {
+	fmt.Println(x)
+}
+
+// OldAPI2 is a deprecated function
+//
+// Deprecated: since v0.10.0
+//
+// This is the
+// the longer
+// description
+func OldAPI2(x string) {
+	fmt.Println(x)
+}
+
 // Test is a test for godoc
 //
 // This is another span that
