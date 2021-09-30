@@ -16,6 +16,17 @@ func NewAPI1(x string) {
 	fmt.Println(x)
 }
 
+// OldAPI1 is a deprecated function (DEPRECATED)
+//
+// Deprecated: since v0.10.0
+//
+// This is the
+// the longer
+// description
+func OldAPI1(x string) {
+	fmt.Println(x)
+}
+
 // NewAPI2 is a preview function
 //  PREVIEW
 // This is the
@@ -23,15 +34,6 @@ func NewAPI1(x string) {
 // description
 func NewAPI2(x string) {
 	// BUG(ansiwen): this is a bug note
-	fmt.Println(x)
-}
-
-// OldAPI1 is a deprecated function (DEPRECATED)
-//
-// This is the
-// the longer
-// description
-func OldAPI1(x string) {
 	fmt.Println(x)
 }
 
